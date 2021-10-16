@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical - 14</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+            box-sizing: 0px;
+            background-color: brown;
+        }
+
+        button{
+            height: 50px;
+            width: 50px;
+            background-color: teal;
+            color: white;
+            font-size: 40px;
+            margin: 50px;
+            box-shadow: 2px 2px grey;
+        }
+
+        .counter{
+            font-size: 50px;
+            color:white;
+        }
+        .header{
+            font-size: 100px;
+            text-align: center;
+            color: white;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+
+        .disabled{
+            background-color: rgb(125, 209, 209);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">Counter</div>
+    <div class="container">
+        <div class="decrement" onclick="decrease()"> <button class="disabled">-</button> </div>
+        <div class="counter"> 0 </div>
+        <div class="increment" onclick="increase()"> <button>+</button> </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
